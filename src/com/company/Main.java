@@ -17,26 +17,32 @@ public class Main<addMassiv, name> {
         name[3] = "Adam";
         names = name;
 
-        System.out.println(" ");
+        System.out.println("-------------------");
 
-        switch (names[3]) {
-            case "Joy":
-                System.out.println("Доброе утро " + names[0]);
-                break;
+        for (String temp : names) {
 
-            case "Mark":
-                System.out.println("Добрый день " + names[1]);
-                break;
+        switch (temp) {
 
-            case "Justin":
-                System.out.println("Добрый вечер " + names[2]);
-                break;
-            case "Adam":
-                System.out.println("Доброй ночи " + names[3]);
+                case "Joy":
+                    System.out.println("Доброе утро " + names[0]);
+                    break;
+
+                case "Mark":
+                    System.out.println("Добрый день " + names[1]);
+                    break;
+
+                case "Justin":
+                    System.out.println("Добрый вечер " + names[2]);
+                    break;
+
+                case "Adam":
+                    System.out.println("Доброй ночи " + names[3]);
+            }
         }
 
 
     } // Дополнительное задание
-    public static String[] name = {"Adam"};
 
-    }
+    static String[] name;
+
+}
